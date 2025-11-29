@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phishing Kit Investigation - MFA Bypass</title>
+    <link rel="stylesheet" href="page/template/live.css">
+    <style>
+        .investigation-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #dc3545;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 9999;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            padding-top: 50px !important;
+        }
+        .shield-video {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .shield-video video {
+            width: 130px;
+            height: 130px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="investigation-banner">
+        STEP 3: MFA/2FA Bypass - Kit captures authentication codes in real-time
+    </div>
+    
+    <div class="main-content">
+        <div class="login-container" style="opacity: 1; transform: none;">
+            <img src="https://logincdn.msftauth.net/shared/1.0/content/images/microsoft_logo_ed9c9eb0e964e4f068dfc6e87c9e9f27.svg" alt="Microsoft" class="company-logo">
+            
+            <div class="email-display">victim@company.com</div>
+            
+            <h1 class="login-title">Approve sign in request</h1>
+            
+            <div class="authenticator-video-container">
+                <div class="shield-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="page/images/serve/shield_h264_white_fefa8c7e9fde58e73850.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <div class="verification-number">
+                <span class="number-display">47</span>
+            </div>
+            
+            <p class="authenticator-instruction">
+                Open your Authenticator app, and enter the number shown to sign in.
+            </p>
+            
+            <p style="font-size: 14px; color: #605e5c; margin: 16px 0;">
+                <a href="#" style="color: #0078d4;">I can't use my Microsoft Authenticator app right now</a>
+            </p>
+            
+            <p style="font-size: 14px; color: #605e5c;">
+                <a href="#" style="color: #0078d4;">More information</a>
+            </p>
+        </div>
+    </div>
+    
+    <div class="privacy-links">
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy & cookies</a>
+    </div>
+</body>
+</html>
